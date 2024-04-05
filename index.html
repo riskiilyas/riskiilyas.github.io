@@ -349,7 +349,7 @@
       <h1 class="title">Certificates</h1>
       <h2>Flutter Certificates</h2>
       <div class="experience-details-container">
-        <div class="slider-container">
+        <div class="slider-container slider-container-2">
           <div class="certificate-container color-container">
             <a href="./assets/certificates/flutter/flutter-intermediate.png" data-lightbox="certificates" data-title="Certificate One">
             <img src="./assets/certificates/flutter/flutter-intermediate.png" alt="Certificate 1" class="certificate-img">
@@ -379,7 +379,7 @@
       </div>
       <h2>Android Certificates</h2>
       <div class="experience-details-container">
-        <div class="slider-container">
+        <div class="slider-container  slider-container-2">
           <div class="certificate-container color-container">
             <a href="./assets/certificates/android/and-expert.png" data-lightbox="certificates" data-title="Certificate One">
 
@@ -426,7 +426,7 @@
       </div>
       <h2>Others Certificates</h2>
       <div class="experience-details-container">
-        <div class="slider-container">
+        <div class="slider-container slider-container-2">
           <div class="certificate-container color-container">
             <a href="./assets/certificates/others/solid.png" data-lightbox="certificates" data-title="Certificate One">
 
@@ -498,7 +498,7 @@
       <h1 class="title">Projects</h1>
       <h2>Flutter Projects</h2>
       <div class="experience-details-container">
-        <div class="about-containers slider-container">
+        <div class="about-containers slider-container slider-container-1">
           <div class="details-container color-container" style="height: 600px;">
             <div class="article-container">
               <a href="./assets/projects/flutter/secure_chat.gif" data-lightbox="certificates" data-title="Certificate One">
@@ -629,7 +629,7 @@
       </div>
       <h2>Android Projects</h2>
       <div class="experience-details-container">
-        <div class="about-containers slider-container">
+        <div class="about-containers slider-container slider-container-1">
           <div class="details-container color-container style="height: 600px;"">
             <div class="article-container">
               <a href="./assets/projects/android/draw.gif" data-lightbox="certificates" data-title="Certificate One">
@@ -739,7 +739,7 @@
       </div>
       <h2>Other Projects</h2>
       <div class="experience-details-container">
-        <div class="about-containers slider-container">
+        <div class="about-containers slider-container slider-container-1">
           <div class="details-container color-container" style="height: 500px;">
             <div class="article-container">
               <a href="./assets/projects/others/snake_game.png" data-lightbox="certificates" data-title="Certificate One">
@@ -851,7 +851,7 @@
     <section id="articles">
       <p class="section__text__p1">Browse My</p>
       <h1 class="title">Articles</h1>
-      <div class="slider-container article-slider">
+      <div class="slider-container slider-container-1 article-slider">
         <a href="https://medium.com/stackademic/flutter-security-mastery-secure-your-data-with-aes-256-rsa-keys-sha-256-9d5b73d2989c" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
           <div class="article-container">
             <div class="article-content">
@@ -971,7 +971,7 @@
 <script>
   // Initialize Slick Carousel
   $(document).ready(function(){
-  $('.slider-container').slick({
+  $('.slider-container-1').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -990,6 +990,26 @@
       }
     ]
   });
+
+  $('.slider-container-2').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplaySpeed: 4000,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust this value based on your design needs
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
 
   // Initialize Slick Carousel for certificates
   $('.slider-container.article-slider').slick({
@@ -1031,6 +1051,7 @@
       }
     ]
   });
+
 });
 
 </script>
