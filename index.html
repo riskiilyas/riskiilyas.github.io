@@ -99,17 +99,29 @@
 
         .writing-item {
             margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
         }
 
         .writing-link {
             color: #5eb3ff;
             text-decoration: none;
             font-size: 0.95em;
+            flex: 1;
         }
 
         .writing-link:hover {
             color: #7ac3ff;
             text-decoration: underline;
+        }
+
+        .writing-date {
+            color: #a0a0a0;
+            font-size: 0.85em;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .contact-links {
@@ -166,6 +178,16 @@
                 gap: 5px;
             }
 
+            .writing-item {
+                flex-direction: column;
+                gap: 2px;
+                align-items: flex-start;
+            }
+
+            .writing-date {
+                font-size: 0.8em;
+            }
+
             .contact-links {
                 flex-direction: column;
                 gap: 8px;
@@ -193,7 +215,7 @@
         
         <div class="project-item">
             <a href="https://play.google.com/store/apps/details?id=com.bengcare.bengcare" class="project-name">BengCare</a>
-            <span class="project-description">Mobile App for Online Autootive Services Booking</span>
+            <span class="project-description">Mobile App for Online Automotive Services Booking</span>
         </div>
     </div>
 
@@ -202,6 +224,15 @@
         
         <div class="writing-item">
             <a href="https://medium.com/stackademic/flutter-security-mastery-secure-your-data-with-aes-256-rsa-keys-sha-256-9d5b73d2989c" class="writing-link">Flutter Security Mastery: Secure Your Data with AES-256, RSA Keys, & SHA-256</a>
+            <span class="writing-date">Jan, 2024</span>
+        </div>
+        <div class="writing-item">
+            <a href="https://medium.com/easyread/how-to-show-shimmer-effect-when-loading-data-in-flutter-real-case-implementation-ab6aea026ec1" class="writing-link">How to show shimmer effect when loading data in Flutter</a>
+            <span class="writing-date">Jan, 2024</span>
+        </div>
+        <div class="writing-item">
+            <a href="https://medium.com/stackademic/level-up-your-flutter-apps-implementing-ai-powered-chat-with-gemini-api-ef6f0aab61ac" class="writing-link">Implementing AI-Powered Chat with Gemini API</a>
+            <span class="writing-date">Dec, 2023</span>
         </div>
     </div>
 
@@ -211,7 +242,7 @@
             <a href="https://linkedin.com/in/riskiilyas" class="contact-link" target="_blank">LinkedIn</a>
             <a href="mailto:riskiilyas03@gmail.com" class="contact-link">Email</a>
         </div>
-        Optimized page for better environment 🌱
+        Optimized page to reduce carbon footprint 🌱
     </div>
 </body>
 </html>
