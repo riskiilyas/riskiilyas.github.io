@@ -1,1060 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riski Ilyas</title>
-    <link rel="icon" type="image/png" href="./assets/icon.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightbox2/2.11.3/css/lightbox.min.css">
-  </head>
-<style>
-      .details-container {
-      margin: 10px; /* Add margin between each card */
-      box-sizing: border-box; /* Ensure that margin is included in the total width */
-    }
-
-    .details-container, .certificate-container {
-      margin: 10px; /* Add margin between each card */
-      box-sizing: border-box; /* Ensure that margin is included in the total width */
-    }
-    .project-img, .certificate-img {
-      width: 100%;
-      height: auto;
-    }
-    .experience-sub-title, .certificate-title {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .certificate-img {
-      cursor: pointer; /* Add a pointer cursor to indicate clickability */
-    }
-    .slick-prev,
-    .slick-next {
-      color: #000; /* Set the color to dark */
-    }
-
-    .slick-prev:hover,
-    .slick-next:hover {
-      color: #333; /* Set the hover color to a darker shade */
-    }
-
-    /* Articles */
-.article-img-container {
-  flex: 0 0 50%; /* Adjust the width of the image container */
-  margin-right: 20px; /* Adjust the space between image and text */
-}
-
-.article-img {
-  width: 100%;
-  height: 100%;
-  height: 200px;
-  object-fit: cover; /* Preserve aspect ratio and cover the container */
-  border-radius: 8px; /* Add border radius for rounded corners */
-}
-
-.article-text {
-  flex: 1;
-  margin: auto 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Adjust the number of lines to show */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.article-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.section-sub-title{
-  text-align: center;
-}
-
-
-</style>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Riski Ilyas</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#certificates-sec">Certificates</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Riski Ilyas</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#certificates-sec">Certificates</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/riski.png" alt="Riski Ilyas profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Riski Ilyas</h1>
-        <p class="section__text__p2">Mobile Developer Specialist</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/riski-ilyas/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/riskiilyas'"
-          />
-          <img
-          src="./assets/medium.png"
-          alt="My Medium profile"
-          class="icon"
-          onclick="location.href='https://medium.com/@riskiilyas03'"
-        />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/setup.jpeg"
-            style="max-width: 400px;"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Mobile Development</p>
-            </div>
-            <div class="details-container" style="width: 250px;">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>• Informatics @ ITS</p><br><p>• Android Graduate @ Binar Academy</p><br><p>• Mobile Learning Path @ Google Bangkit</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm an Informatics Undergraduate Student at ITS Surabaya on 6th Semester. I'm currently specializing in Mobile & Backend Development.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Tech Stacks</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Native Android</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laravel</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Dart</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kotlin</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C / C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>RDBMS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="certificates-sec">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Certificates</h1>
-      <h2>Flutter Certificates</h2>
-      <div class="experience-details-container">
-        <div class="slider-container slider-container-2">
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/flutter/flutter-intermediate.png" data-lightbox="certificates" data-title="Certificate One">
-            <img src="./assets/certificates/flutter/flutter-intermediate.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Flutter Intermediate</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/flutter/flutter_fundamental.png" data-lightbox="certificates" data-title="Certificate One">
-            <img src="./assets/certificates/flutter/flutter_fundamental.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Flutter Fundamental</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/flutter/pemula.png" data-lightbox="certificates" data-title="Certificate One">
-            <img src="./assets/certificates/flutter/pemula.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Flutter Pemula</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/flutter/dart.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/flutter/dart.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar Dart</h2>
-          </div>
-        </div>
-      </div>
-      <h2>Android Certificates</h2>
-      <div class="experience-details-container">
-        <div class="slider-container  slider-container-2">
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/android/and-expert.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/android/and-expert.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Android Expert</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/android/and-intermediate.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/android/and-intermediate.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Android Intermediate</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/android/and-ml.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/android/and-ml.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Android With Machine Learning</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/android/and-fundamental.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/android/and-fundamental.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Android Fundamental</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/android/pemula.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/android/pemula.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Android Pemula</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/android/kotlin.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/android/kotlin.png" alt="Certificate 3" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar Kotlin</h2>
-          </div>
-        </div>
-      </div>
-      <h2>Others Certificates</h2>
-      <div class="experience-details-container">
-        <div class="slider-container slider-container-2">
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/solid.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/solid.png" alt="Certificate 1" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Prinsip Pemrograman SOLID</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/git.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/git.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar Git dan Github</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/java.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/java.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar Java</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/problem_solving.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/problem_solving.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Problem Solving (Intermediate)</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/sql.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/sql.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">SQL (Intermediate)</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/js.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/js.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar Javascript</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/backend.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/backend.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar Backend</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/devops.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/devops.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar DevOps</h2>
-          </div>
-          <div class="certificate-container color-container">
-            <a href="./assets/certificates/others/aws.png" data-lightbox="certificates" data-title="Certificate One">
-
-            <img src="./assets/certificates/others/aws.png" alt="Certificate 2" class="certificate-img">
-            </a>
-            <h2 class="certificate-title">Dasar AWS</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects"">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <h2>Flutter Projects</h2>
-      <div class="experience-details-container">
-        <div class="about-containers slider-container slider-container-1">
-          <div class="details-container color-container" style="height: 600px;">
-            <div class="article-container">
-              <a href="./assets/projects/flutter/secure_chat.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/flutter/secure_chat.gif"
-                style="height: 250px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">RSA Encrypted Chat App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Secure-Chat-Flutter'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container" style="height: 600px;">
-            <div class="article-container">
-              <a href="./assets/projects/flutter/chat_ai.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/flutter/chat_ai.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">AI Powered Chat App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Chat-AI-App'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container" style="height: 600px;">
-            <div class="article-container">
-              <a href="./assets/projects/flutter/restaurant.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/flutter/restaurant.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Restaurant App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Restaurant-App'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/flutter/graphql.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/flutter/graphql.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">GraphQL Live Note App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Flutter-GraphQL-Demo'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/flutter/number.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/flutter/number.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Number Facts App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Number-Facts-App'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/flutter/weather.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/flutter/weather.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Weather App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Simple-Weather-App-Flutter'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>Android Projects</h2>
-      <div class="experience-details-container">
-        <div class="about-containers slider-container slider-container-1">
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/android/draw.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/android/draw.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Drawing App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Drawing-App'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/android/dijkstra.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/android/dijkstra.gif"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Dijkstra Visualizer App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Dijkstra-Go'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/android/github.png" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/android/github.png"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">GitHub User App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/GithubUser-App'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/android/weather.png" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/android/weather.png"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Weather App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Weather-Forecast-App'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container style="height: 600px;"">
-            <div class="article-container">
-              <a href="./assets/projects/android/sciroper.png" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/android/sciroper.png"
-                style="height: 450px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">RealTime RPS Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Sciroper-Android-Game'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>Other Projects</h2>
-      <div class="experience-details-container">
-        <div class="about-containers slider-container slider-container-1">
-          <div class="details-container color-container" style="height: 500px;">
-            <div class="article-container">
-              <a href="./assets/projects/others/snake_game.png" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/others/snake_game.png"
-                style="height: 350px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Snake Game (Java Swing)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Snake-Game'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container" style="height: 520px;">
-            <div class="article-container">
-              <a href="./assets/projects/others/bluedoorz.png" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/others/bluedoorz.png"
-                style="height: 350px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Hotel Management System (Laravel)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/BlueDoorz'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <a href="./assets/projects/others/dijkstra.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/others/dijkstra.gif"
-                style="height: 350px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Dijkstra Visualizer (PyGame)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Pygame-Dijkstra-Visualizer'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <a href="./assets/projects/others/pong.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/others/pong.gif"
-                style="height: 350px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">3D Pong Game (Three.js)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Pong-Game-ThreeJS'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <a href="./assets/projects/others/penguin.gif" data-lightbox="certificates" data-title="Certificate One">
-              <img
-                src="./assets/projects/others/penguin.gif"
-                style="height: 350px;"
-                alt="Project 1"
-                class="project-img"
-              />
-              </a>
-            </div>
-            <h2 class="experience-sub-title project-title">Penguin Runner (PyGame)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/riskiilyas/Penguin-Runner'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="articles">
-      <p class="section__text__p1">Browse My</p>
-      <h1 class="title">Articles</h1>
-      <div class="slider-container slider-container-1 article-slider">
-        <a href="https://medium.com/stackademic/flutter-security-mastery-secure-your-data-with-aes-256-rsa-keys-sha-256-9d5b73d2989c" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
-          <div class="article-container">
-            <div class="article-content">
-              <div class="article-img-container">
-                <img src="./assets/articles/security.webp" style="height: 200px;" alt="Article 1" class="article-img" onclick="openModal('./assets/article1_large.jpg', 'Article One')">
-              </div>
-              <div class="article-text">
-                <h2 class="article-title">Flutter Security Mastery: Secure Your Data with AES-256, RSA Keys, & SHA-256</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://medium.com/easyread/how-to-show-shimmer-effect-when-loading-data-in-flutter-real-case-implementation-ab6aea026ec1" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
-          <div class="article-container">
-            <div class="article-content">
-              <div class="article-img-container">
-                <img src="./assets/articles/shimmer.webp" alt="Article 1" class="article-img" onclick="openModal('./assets/article1_large.jpg', 'Article One')">
-              </div>
-              <div class="article-text">
-                <h2 class="article-title">How To Show Shimmer Effect When Loading Data in Flutter: Real Case Implementation</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://medium.com/stackademic/flutter-extensions-tricks-to-boost-your-productivity-88573b7efc0f" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
-          <div class="article-container">
-            <div class="article-content">
-              <div class="article-img-container">
-                <img src="./assets/articles/extension.webp" alt="Article 1" class="article-img" onclick="openModal('./assets/article1_large.jpg', 'Article One')">
-              </div>
-              <div class="article-text">
-                <h2 class="article-title">Flutter Extensions: Tricks to Boost Your Productivity 💫</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://medium.com/stackademic/how-to-implement-infinite-scrolling-in-flutter-a-simple-guide-8936f6aadf07" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
-          <div class="article-container">
-            <div class="article-content">
-              <div class="article-img-container">
-                <img src="./assets/articles/scroll.webp" alt="Article 1" class="article-img" onclick="openModal('./assets/article1_large.jpg', 'Article One')">
-              </div>
-              <div class="article-text">
-                <h2 class="article-title">How to Implement Infinite Scrolling in Flutter: A Simple Guide</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://medium.com/stackademic/flutter-resource-class-elevating-data-state-management-to-the-next-level-0df3cc2b4ad6" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
-          <div class="article-container">
-            <div class="article-content">
-              <div class="article-img-container">
-                <img src="./assets/articles/resource.webp" alt="Article 1" class="article-img" onclick="openModal('./assets/article1_large.jpg', 'Article One')">
-              </div>
-              <div class="article-text">
-                <h2 class="article-title">Flutter Resource Class: Elevating Data State Management to the Next Level</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://medium.com/stackademic/level-up-your-flutter-apps-implementing-ai-powered-chat-with-gemini-api-ef6f0aab61ac" target="_blank" class="article-link"> <!-- Replace with your actual article link -->
-          <div class="article-container">
-            <div class="article-content">
-              <div class="article-img-container">
-                <img src="./assets/articles/gemini.webp" alt="Article 1" class="article-img" onclick="openModal('./assets/article1_large.jpg', 'Article One')">
-              </div>
-              <div class="article-text">
-                <h2 class="article-title">Level Up Your Flutter Apps: Implementing AI-Powered Chat with Gemini API</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <!-- Add more article containers as needed -->
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:riskiilyas03@gmail.com">riskiilyas03@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/riski-ilyas/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certificates-sec">Certificates</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Riski Ilyas. All Rights Reserved.</p>
-    </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-<script>
-  // Initialize Slick Carousel
-  $(document).ready(function(){
-  $('.slider-container-1').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768, // Adjust this value based on your design needs
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      }
-    ]
-  });
 
-  $('.slider-container-2').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplaySpeed: 4000,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768, // Adjust this value based on your design needs
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #1a1a1a;
+            color: white;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 60px;
         }
-      }
-    ]
-  });
 
-
-  // Initialize Slick Carousel for certificates
-  $('.slider-container.article-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768, // Adjust this value based on your design needs
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+        .header {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
         }
-      }
-    ]
-  });
 
-  $('.slider-container.certificate-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768, // Adjust this value based on your design needs
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+        .profile-info {
+            flex: 1;
+            order: 2;
         }
-      }
-    ]
-  });
 
-});
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #444;
+            order: 1;
+        }
 
-</script>
-    <script src="script.js"></script>
-  </body>
+        h1 {
+            color: #ffffff;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .intro {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 0.95em;
+            text-align: justify;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #ffffff;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: normal;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            align-items: baseline;
+        }
+
+        .project-name {
+            color: #5eb3ff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .project-name:hover {
+            color: #7ac3ff;
+            text-decoration: underline;
+        }
+
+        .project-description {
+            color: white;
+            font-size: 0.9em;
+            text-align: justify;
+        }
+
+        .writing-item {
+            margin-bottom: 8px;
+        }
+
+        .writing-link {
+            color: #5eb3ff;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+
+        .writing-link:hover {
+            color: #7ac3ff;
+            text-decoration: underline;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: #5eb3ff;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+
+        .contact-link:hover {
+            color: #7ac3ff;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #a0a0a0;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                order: 2;
+                text-align: left;
+            }
+
+            .profile-photo {
+                align-self: center;
+                order: 1;
+                margin-bottom: 20px;
+            }
+            
+            body {
+                padding: 20px 15px;
+                padding-bottom: 80px;
+            }
+
+            .project-item {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .footer {
+                margin-bottom: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile-info">
+            <h1>Riski Ilyas</h1>
+            <div class="intro">
+              I'm a software engineer with expertise in mobile application development, specializing in performance optimization and security implementation. I'm also deeply interested in economics—particularly its foundational principles and real-world applications—which I continue to explore alongside my work. I employ systematic approaches to solve complex technical challenges through evidence-based methodologies and continuous experimentation.
+            </div>
+        </div>
+        <img src="profile.webp" alt="Riski Ilyas" class="profile-photo">
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        
+        <div class="project-item">
+            <a href="https://play.google.com/store/apps/details?id=com.bengcare.bengcare" class="project-name">BengCare</a>
+            <span class="project-description">Mobile App for Online Autootive Services Booking</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Writing</h2>
+        
+        <div class="writing-item">
+            <a href="https://medium.com/stackademic/flutter-security-mastery-secure-your-data-with-aes-256-rsa-keys-sha-256-9d5b73d2989c" class="writing-link">Flutter Security Mastery: Secure Your Data with AES-256, RSA Keys, & SHA-256</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="text-align: center; gap: 1rem; display: flex; flex-wrap: wrap; justify-content: center;">
+            <a href="https://github.com/riskiilyas" class="contact-link" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/riskiilyas" class="contact-link" target="_blank">LinkedIn</a>
+            <a href="mailto:riskiilyas03@gmail.com" class="contact-link">Email</a>
+        </div>
+        Optimized page for better environment 🌱
+    </div>
+</body>
 </html>
